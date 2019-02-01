@@ -92,7 +92,8 @@ endif ()
 
 if (WIN32 OR APPLE)
 	set(MACHINE_INDEPENDENT_GENERATED_SOURCE_FILES
-	  ${CMAKE_CURRENT_SOURCE_DIR}/hlslang/MachineIndependent/Gen_hlslang.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/hlslang/MachineIndependent/Gen_hlslang.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/hlslang/MachineIndependent/Gen_hlslang_tab.cpp
 	  ${CMAKE_CURRENT_SOURCE_DIR}/hlslang/MachineIndependent/hlslang_tab.h
 	)
 else()
